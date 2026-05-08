@@ -42,6 +42,7 @@
         zmk,kscan = &kscan0;
         zmk,matrix-transform = &default_transform;
         zephyr,display = &ssd1306;
+		zmk,physical-layouts = &physical_layout0;
     };
 
     default_transform: keymap_transform_0 {
@@ -54,7 +55,24 @@
             RC(2,0) RC(2,1) RC(2,2)
         >;
     };
+	physical_layout0: physical_layout_0 {
+        compatible = "zmk,physical-layout";
+        display-name = "Default";
+        transform = <&default_transform>;
+        kscan = <&kscan0>;
 
+        keys = 
+            &key_physical_attrs 100 100 0   0   0 0 0>
+            , <&key_physical_attrs 100 100 100 0   0 0 0>
+            , <&key_physical_attrs 100 100 200 0   0 0 0>
+            , <&key_physical_attrs 100 100 0   100 0 0 0>
+            , <&key_physical_attrs 100 100 100 100 0 0 0>
+            , <&key_physical_attrs 100 100 200 100 0 0 0>
+            , <&key_physical_attrs 100 100 0   200 0 0 0>
+            , <&key_physical_attrs 100 100 100 200 0 0 0>
+            , <&key_physical_attrs 100 100 200 200 0 0 0>
+            ;
+    };
     kscan0: kscan {
         compatible = "zmk,kscan-gpio-matrix";
         diode-direction = "col2row";
