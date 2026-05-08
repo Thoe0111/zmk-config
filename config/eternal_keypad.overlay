@@ -11,7 +11,7 @@
         compatible = "zmk,matrix-transform";
         columns = <3>;
         rows = <3>;
-        map = <
+        map = 
             RC(0,0) RC(0,1) RC(0,2)
             RC(1,0) RC(1,1) RC(1,2)
             RC(2,0) RC(2,1) RC(2,2)
@@ -20,7 +20,6 @@
 
     kscan0: kscan {
         compatible = "zmk,kscan-gpio-matrix";
-        label = "KSCAN";
         diode-direction = "col2row";
 
         row-gpios
@@ -38,7 +37,6 @@
 
     encoder: encoder {
         compatible = "alps,ec11";
-        label = "ENCODER";
         a-gpios = <&xiao_d 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         b-gpios = <&xiao_d 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         steps = <80>;
@@ -47,7 +45,6 @@
 
     encoder_button: encoder_button {
         compatible = "zmk,kscan-gpio-direct";
-        label = "ENCODER_BUTTON";
         input-gpios = <&xiao_d 8 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
     };
 };
