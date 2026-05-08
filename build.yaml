@@ -20,4 +20,4 @@
 ---
 include:
   - board: seeeduino_xiao_ble
-    shield: eternal_keypad
+    shield: my_keypad
