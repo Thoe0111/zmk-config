@@ -37,7 +37,7 @@
 
         default_layer {
             label = "Numpad";
-            bindings = 
+            bindings = <
                 &kp N7  &kp N8  &kp N9
                 &kp N4  &kp N5  &kp N6
                 &kp N1  &kp N2  &kp N3
@@ -47,7 +47,7 @@
 
         function_layer {
             label = "Function";
-            bindings = 
+            bindings = <
                 &kp F7  &kp F8  &kp F9
                 &kp F4  &kp F5  &kp F6
                 &kp F1  &kp F2  &kp F3
@@ -57,7 +57,7 @@
 
         navigation_layer {
             label = "Navigation";
-            bindings = 
+            bindings = <
                 &kp HOME  &kp UP    &kp END
                 &kp LEFT  &kp DOWN  &kp RIGHT
                 &kp PGUP  &kp PGDN  &kp DEL
@@ -67,7 +67,7 @@
 
         system_layer {
             label = "System";
-            bindings = 
+            bindings = <
                 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2
                 &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR
                 &out OUT_USB  &sys_reset    &bootloader
