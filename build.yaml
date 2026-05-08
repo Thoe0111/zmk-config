@@ -19,5 +19,5 @@
 #
 ---
 include:
-  - board: nrfmicro_11
+  - board: seeeduino_xiao_ble
     shield: eternal_keypad
