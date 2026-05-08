@@ -41,7 +41,6 @@
 / {
     chosen {
         zmk,kscan = &kscan0;
-        zmk,matrix-transform = &default_transform;
         zephyr,display = &ssd1306;
 		zmk,physical-layouts = &physical_layout0;
     };
