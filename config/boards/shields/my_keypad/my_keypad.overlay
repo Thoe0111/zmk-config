@@ -66,4 +66,4 @@
             ;
 
         col-gpios
-            = <&xiao_d 3 GPIO_ACTIVE_HIG
+            = <&xiao_d 3 GPIO_ACTIVE_HIGH>
